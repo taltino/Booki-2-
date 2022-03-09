@@ -1,0 +1,807 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  margin: 0;
+  padding: 0;
+}
+
+/****** header ******/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+
+.logo-booki img {
+  width: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 32px 20px 0 30px;
+  border-top: 3px solid transparent;
+}
+
+nav a:hover {
+  color: #0065fc;
+  border-color: #0065fc;
+}
+
+/******* main ******/
+
+main,
+header,
+.block-footer {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+main {
+  margin-bottom: 30px;
+}
+
+/******** section1 ******/
+.block1 {
+  margin-bottom: 40px;
+}
+
+/******* title ******/
+
+.title {
+  margin-bottom: 16px;
+}
+
+.title-h1 {
+  margin-bottom: 6px;
+}
+
+/****** search ******/
+
+.search {
+  margin-bottom: 20px;
+}
+
+.search form {
+  display: inline-flex;
+  flex-direction: row;
+}
+
+.search i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  width: 50px;
+  height: auto;
+  border-radius: 8px 0 0 8px;
+}
+
+.search input {
+  padding-right: 30px;
+  height: auto;
+  border: none;
+  border-bottom: 1px solid rgb(243, 239, 239);
+  border-top: 1px solid rgb(243, 239, 239);
+}
+
+.search input::placeholder {
+  font-weight: bold;
+  color: black;
+  padding-left: 16px;
+}
+
+.search button {
+  background-color: #0065fc;
+  color: white;
+  font-weight: bold;
+  padding: 16px 16px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 0 10px 10px 0;
+}
+
+.search button:hover {
+  cursor: pointer;
+  transition-duration: 0.25s;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+
+.fas.fa-search {
+  display: none;
+}
+
+/****** filter ******/
+
+.filter {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.filter h2 {
+  margin-right: 30px;
+}
+
+.filter-item {
+  display: flex;
+}
+
+.item {
+  display: flex;
+  border: 1px solid rgb(243, 239, 239);
+  margin-right: 20px;
+  border-radius: 20px;
+}
+.item a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+.item i {
+  background-color: #deebff;
+  width: 50px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: -2px;
+  color: #0065fc;
+  font-size: 18px;
+}
+
+.item p {
+  padding-left: 16px;
+  padding-right: 16px;
+  color: black;
+  font-weight: bold;
+}
+
+.item:hover {
+  cursor: pointer;
+  transition-duration: 0.25s;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+
+.item i:hover {
+  background: white;
+  transition-duration: 0.25s;
+  border: 1px solid darkgrey;
+}
+
+/******** info *******/
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info i {
+  display: flex;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 16px;
+  border: 1px solid rgb(243, 239, 239);
+  color: #0065fc;
+}
+
+.info i:hover {
+  cursor: pointer;
+  transition-duration: 0.25s;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+
+/******** section2 hebergement ******/
+
+.block-hebergement-popular {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.block-hebergement h2 {
+  margin-bottom: 16px;
+}
+
+.block-hebergement {
+  width: 60%;
+  background-color: #f2f2f2;
+  border-radius: 16px;
+  padding: 25px 25px;
+}
+.block-carte-hebergement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.carte-hebergement {
+  width: 32%;
+  margin-bottom: 16px;
+  background-color: white;
+  border-radius: 16px 16px 16px 16px;
+}
+.carte-hebergement a {
+  text-decoration: none;
+}
+
+.carte-hebergement img {
+  width: 100%;
+  height: 125px;
+  object-fit: cover;
+  padding: 4px;
+  border-radius: 16px 16px 0 0;
+}
+
+.texte-hebergement {
+  padding: 0 16px;
+}
+.texte-hebergement h3 {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+.para {
+  text-decoration: none;
+  color: rgb(90, 83, 83);
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+.star-hebergement {
+  margin-bottom: 6px;
+  font-size: 12px;
+}
+
+.carte-hebergement:hover {
+  cursor: pointer;
+  transition-duration: 0.25s;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+
+/******* lien *******/
+
+.lien-hebergement a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/****** star ********/
+.bleu {
+  color: #0065fc;
+}
+
+.grey {
+  color: #b9b4b4;
+}
+
+/****** section2 aside *******/
+
+.block-popular {
+  width: 37%;
+  background-color: #f2f2f2;
+  border-radius: 16px;
+  padding: 25px 25px;
+}
+
+.title-icon {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-icon i {
+  font-size: 20px;
+  color: black;
+}
+
+.block-carte-popular {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.carte-popular img {
+  width: 140px;
+  height: 150px;
+  padding: 4px;
+  border-radius: 16px 0 0 16px;
+  object-fit: cover;
+}
+
+.carte-popular {
+  margin-bottom: 16px;
+}
+
+.carte-popular a {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  background-color: white;
+  border-radius: 16px 16px 16px 16px;
+}
+
+.texte-popular {
+  display: flex;
+  flex-direction: column;
+  padding: 16px 16px;
+  justify-content: space-between;
+}
+
+.texte h3 {
+  color: black;
+  margin-bottom: 6px;
+}
+.texte p {
+  color: rgb(90, 83, 83);
+}
+
+.star-popular {
+  font-size: 12px;
+}
+
+.carte-popular:hover {
+  cursor: pointer;
+  transition-duration: 0.25s;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+
+/****** section 3 activite marseille *******/
+
+.block-activite h3 {
+  margin-bottom: 16px;
+}
+
+.block-activite {
+  width: 100%;
+}
+
+.block-carte-activite {
+  display: flex;
+  justify-content: space-between;
+}
+.carte-activite1 {
+  width: 23%;
+  height: 500px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px,
+    rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+}
+
+.carte1 img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.block-carte-activite p {
+  padding: 10px;
+}
+.block-carte-activite a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.carte-activite2 {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  height: 500px;
+  justify-content: space-between;
+}
+
+.carte2 {
+  height: 280px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px,
+    rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+}
+
+.carte2 img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+.carte3 {
+  width: 100%;
+  height: 180px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px,
+    rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+}
+
+.carte3 img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.carte-activite3 {
+  width: 23%;
+  height: 500px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px,
+    rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+}
+
+.carte4 img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.carte-activite4 {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  height: 500px;
+  justify-content: space-between;
+}
+
+.carte5 {
+  width: 100%;
+  height: 230px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px,
+    rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+}
+
+.carte5 img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+
+.carte6 {
+  height: 230px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px,
+    rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+}
+
+.carte6 img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 16px 16px 0 0;
+}
+.carte-activite1:hover {
+  cursor: pointer;
+  transition-duration: 0.25s;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+.carte2:hover {
+  cursor: pointer;
+  transition-duration: 0.25s;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+
+.carte3:hover {
+  cursor: pointer;
+  transition-duration: 0.25s;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+.carte-activite3:hover {
+  cursor: pointer;
+  transition-duration: 0.25s;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+.carte5:hover {
+  cursor: pointer;
+  transition-duration: 0.25s;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+.carte6:hover {
+  cursor: pointer;
+  transition-duration: 0.25s;
+  transform: scale(1.03);
+  transition: ease 0.4s;
+}
+
+/***** footer *****/
+
+footer {
+  background-color: #f2f2f2;
+}
+
+.block-footer {
+  display: flex;
+  padding: 35px 0;
+}
+
+.container {
+  width: 33%;
+  justify-content: space-between;
+}
+
+.container h4 {
+  margin-bottom: 16px;
+}
+
+.container p {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.container a {
+  text-decoration: none;
+  color: rgb(90, 83, 83);
+}
+
+/**** mode responsive ****/
+
+@media screen and (max-width: 992px) {
+  .filter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .filter h2 {
+    margin-bottom: 10px;
+  }
+
+  .filter-item {
+    flex-wrap: wrap;
+  }
+  .item {
+    margin-bottom: 10px;
+  }
+  /****** hebergement ******/
+  .block-hebergement-popular {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .block-hebergement {
+    width: 100%;
+    flex-wrap: wrap;
+    order: 2;
+  }
+
+  /***** popular *****/
+
+  .block-popular {
+    order: 1;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .block-carte-popular {
+    display: flex;
+  }
+
+  /***** activite a marseille *****/
+
+  .block-carte-activite {
+    flex-wrap: wrap;
+  }
+  .carte-activite1 {
+    width: 48%;
+    margin-bottom: 16px;
+  }
+  .carte-activite2 {
+    width: 48%;
+  }
+  .carte-activite3 {
+    width: 48%;
+  }
+  .carte-activite4 {
+    width: 48%;
+  }
+
+  /**** footer ****/
+
+  .container {
+    width: auto;
+  }
+
+  .block-footer {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carte-hebergement {
+    width: 48%;
+  }
+  /**** footer ****/
+
+  .container {
+    width: auto;
+  }
+
+  .block-footer {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  /********* header ************/
+  header {
+    width: 100%;
+  }
+
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .logo-booki {
+    width: 100%;
+    text-align: center;
+  }
+  nav {
+    display: flex;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    width: 50%;
+    padding: 25px 10px 16px 10px;
+    border-top: none;
+    border-bottom: 3px solid rgb(212 204 204 / 32%);
+  }
+
+  nav a:hover {
+    color: #0065fc;
+    border-color: #0065fc;
+  }
+
+  /***** title ******/
+  .title-h1 {
+    font-size: 20px;
+  }
+  /***** search ******/
+
+  .fas.fa-search {
+    display: block;
+    background-color: transparent;
+    height: auto;
+    width: auto;
+  }
+  .search button {
+    border-radius: 16px;
+  }
+
+  .texte-search {
+    display: none;
+  }
+
+  /***** hebergement ******/
+
+  .carte-hebergement {
+    width: 100%;
+  }
+  .block-hebergement h2 {
+    font-size: 20px;
+  }
+
+  .title-icon h2 {
+    font-size: 20px;
+  }
+  .texte-popular {
+    font-size: 14px;
+  }
+
+  .block-carte-activite {
+    flex-wrap: wrap;
+  }
+  .carte-activite1 {
+    width: 100%;
+    height: auto;
+  }
+  .carte-activite2 {
+    width: 100%;
+    height: auto;
+  }
+  .carte-activite3 {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px;
+  }
+  .carte-activite4 {
+    width: 100%;
+    height: auto;
+  }
+
+  .carte1 img {
+    height: 150px;
+  }
+
+  .carte2 {
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .carte2 img {
+    height: 150px;
+  }
+  .carte3 {
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .carte3 img {
+    height: 150px;
+  }
+
+  .carte4 img {
+    height: 150px;
+  }
+
+  .carte5 {
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .carte5 img {
+    height: 150px;
+  }
+  .carte6 {
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .carte6 img {
+    height: 150px;
+  }
+
+  /****** footer ******/
+
+  .block-footer {
+    flex-wrap: wrap;
+  }
+  .container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
